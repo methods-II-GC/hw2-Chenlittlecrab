@@ -31,8 +31,7 @@ def write_tags(path:str, data: list):
             sent.append([]) #append a new empty list for each sentence so that the output file will also have an empty line between each sentence
             for row in sent: 
                 new_row = " ".join(row) #use join.(method) to concatenate the items in the list and seperate them with space
-                output.write(new_row)
-                output.write("\n") #for each iteration, write the new row to the output file
+                output.write(new_row + "\n") #for each iteration, write the new row to the output file
 
 
 
